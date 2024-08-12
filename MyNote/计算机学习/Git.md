@@ -18,3 +18,5 @@
 	git remote rename origin new_name 改名
 	git push 推送至远程仓库
 	ssh-keygen -t rsa -C ssh地址 为ssh地址提供安全认证  
+
+

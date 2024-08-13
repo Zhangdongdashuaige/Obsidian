@@ -4,18 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "75df50fd48b0a606",
+        "id": "388bea00586d69a4",
         "type": "tabs",
         "children": [
           {
-            "id": "58bb3899a41cf570",
+            "id": "f97c74351e6fe254",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "计算机学习/Flink.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
             }
           }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "d892f8554b643a01",
@@ -148,19 +147,20 @@
       "markdown-importer:打开 Markdown 格式转换器": false
     }
   },
-  "active": "58bb3899a41cf570",
+  "active": "f97c74351e6fe254",
   "lastOpenFiles": [
+    "create a link.md",
+    "conflict-files-obsidian-git.md",
     "计算机学习/Git.md",
+    "计算机学习/Flink.md",
     "2024-08-12.md",
     "未命名.canvas",
-    "计算机学习/Flink.md",
     "考研/政治/政治.md",
     "考研/英语/考研语法.md",
     "考研/政治",
     "考研/英语/生词.md",
     "考研/英语/List 7.md",
     "未命名",
-    "create a link.md",
     "考研/数学/未命名.md",
     "考研/数学",
     "考研/英语",

@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "de7c9d89d20e80a0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MarkDown超级教程 Obsidian版 2022.1.12.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,13 +98,13 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "计算机学习/Flink.md",
+                "file": "MarkDown超级教程 Obsidian版 2022.1.12.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": false,
+                "backlinkCollapsed": true,
                 "unlinkedCollapsed": true
               }
             }
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "计算机学习/Flink.md",
+                "file": "MarkDown超级教程 Obsidian版 2022.1.12.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,32 +138,35 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机学习/Flink.md"
+                "file": "MarkDown超级教程 Obsidian版 2022.1.12.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 307.5,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:打开快速切换": false,
-      "graph:查看关系图谱": false,
-      "canvas:新建白板": false,
-      "daily-notes:打开/创建今天的日记": false,
-      "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
-      "markdown-importer:打开 Markdown 格式转换器": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false
     }
   },
-  "active": "f97c74351e6fe254",
+  "active": "de7c9d89d20e80a0",
   "lastOpenFiles": [
-    "计算机学习/Git.md",
     "计算机学习/Flink.md",
+    "MarkDown超级教程 Obsidian版 2022.1.12.md",
+    "2024-08-20.md",
+    "计算机学习/Git.md",
     "2024-08-12.md",
     "create a link.md",
     "未命名.canvas",

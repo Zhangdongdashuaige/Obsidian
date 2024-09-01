@@ -1,0 +1,192 @@
+{
+  "main": {
+    "id": "150b3c9dcf0332cc",
+    "type": "split",
+    "children": [
+      {
+        "id": "388bea00586d69a4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f97c74351e6fe254",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "计算机学习/Flink.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "de7c9d89d20e80a0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MarkDown超级教程 Obsidian版 2022.1.12.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "515ae721da691895",
+    "type": "split",
+    "children": [
+      {
+        "id": "30910aa5068d6753",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4e30f0fbee93d74c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "30c07cad4219d268",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "60bc62206030a300",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "right": {
+    "id": "d892f8554b643a01",
+    "type": "split",
+    "children": [
+      {
+        "id": "e89d0f8241b0b29c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "014b3eb481fb6a77",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "计算机学习/Flink.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2df00b9445295f21",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "计算机学习/Flink.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f56befabe6254cf4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "88f491d4b541c4f1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "计算机学习/Flink.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 307.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "markdown-importer:打开 Markdown 格式转换器": false
+    }
+  },
+  "active": "f97c74351e6fe254",
+  "lastOpenFiles": [
+    "MarkDown超级教程 Obsidian版 2022.1.12.md",
+    "计算机学习/Flink.md",
+    "2024-08-20.md",
+    "计算机学习/Git.md",
+    "2024-08-12.md",
+    "create a link.md",
+    "未命名.canvas",
+    "conflict-files-obsidian-git.md",
+    "考研/政治/政治.md",
+    "考研/英语/考研语法.md",
+    "考研/政治",
+    "考研/英语/生词.md",
+    "考研/英语/List 7.md",
+    "未命名",
+    "考研/数学/未命名.md",
+    "考研/数学",
+    "考研/英语",
+    "考研/数学/第二节 极限.md",
+    "工作/报表报错问题探查.md",
+    "345422b04ca9c1a06e1e796a905a2ad 1.png",
+    "345422b04ca9c1a06e1e796a905a2ad.png",
+    "计算机学习",
+    "工作",
+    "考研",
+    "2024-05-31.md"
+  ]
+}

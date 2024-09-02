@@ -1,9 +1,15 @@
 {
   "commitMessage": "vault backup: {{date}}",
   "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
+<<<<<<< HEAD
   "autoSaveInterval": 2,
   "autoPushInterval": 2,
   "autoPullInterval": 5,
+=======
+  "autoSaveInterval": 1,
+  "autoPushInterval": 1,
+  "autoPullInterval": 1,
+>>>>>>> c0c0e8565ce73c359ce406f788ed3cde0f8dba70
   "autoPullOnBoot": true,
   "disablePush": true,
   "pullBeforePush": true,
@@ -18,7 +24,11 @@
   "treeStructure": false,
   "refreshSourceControl": true,
   "basePath": "",
+<<<<<<< HEAD
   "differentIntervalCommitAndPush": true,
+=======
+  "differentIntervalCommitAndPush": false,
+>>>>>>> c0c0e8565ce73c359ce406f788ed3cde0f8dba70
   "changedFilesInStatusBar": false,
   "showedMobileNotice": true,
   "refreshSourceControlTimer": 7000,
@@ -54,5 +64,9 @@
     "lastShownAuthorDisplay": "initials",
     "lastShownDateTimeFormatOptions": "date"
   },
+<<<<<<< HEAD
   "autoCommitMessage": "vault backup: {{date}}"
+=======
+  "autoCommitMessage": "笔记: {{date}}"
+>>>>>>> c0c0e8565ce73c359ce406f788ed3cde0f8dba70
 }

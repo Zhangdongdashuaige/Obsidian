@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "b47d3f627f279320",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "de7c9d89d20e80a0",
             "type": "leaf",
             "state": {
@@ -31,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -99,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "计算机学习/Flink.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "计算机学习/Flink.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机学习/Flink.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           }
@@ -162,18 +175,18 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "f97c74351e6fe254",
+  "active": "b47d3f627f279320",
   "lastOpenFiles": [
+    "计算机学习/Flink.md",
+    "conflict-files-obsidian-git.md",
     "Pasted image 20240830092338.png",
     "MarkDown超级教程 Obsidian版 2022.1.12.md",
-    "计算机学习/Flink.md",
     "Pasted image 20240830090512.png",
     "2024-08-20.md",
     "计算机学习/Git.md",
     "2024-08-12.md",
     "create a link.md",
     "未命名.canvas",
-    "conflict-files-obsidian-git.md",
     "考研/政治/政治.md",
     "考研/英语/考研语法.md",
     "考研/政治",

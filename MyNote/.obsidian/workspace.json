@@ -26,13 +26,12 @@
               "type": "markdown",
               "state": {
                 "file": "MarkDown超级教程 Obsidian版 2022.1.12.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -78,11 +77,13 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "d892f8554b643a01",
@@ -98,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MarkDown超级教程 Obsidian版 2022.1.12.md",
+                "file": "计算机学习/Flink.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MarkDown超级教程 Obsidian版 2022.1.12.md",
+                "file": "计算机学习/Flink.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MarkDown超级教程 Obsidian版 2022.1.12.md"
+                "file": "计算机学习/Flink.md"
               }
             }
           }
@@ -161,10 +162,12 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "de7c9d89d20e80a0",
+  "active": "f97c74351e6fe254",
   "lastOpenFiles": [
-    "计算机学习/Flink.md",
+    "Pasted image 20240830092338.png",
     "MarkDown超级教程 Obsidian版 2022.1.12.md",
+    "计算机学习/Flink.md",
+    "Pasted image 20240830090512.png",
     "2024-08-20.md",
     "计算机学习/Git.md",
     "2024-08-12.md",

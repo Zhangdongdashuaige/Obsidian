@@ -38,6 +38,23 @@ tags:
 #### Flink分层API
 ![[Pasted image 20240830092338.png]]
 
+# Flink中的流类型以及相互转化
+
+- ***DataStream：*** 
+  Flink流处理api中最核心的数据结构。它代表一个运行在多个分区上的并行流。可以从 <font color="red"><b>StreamExecutionEnvironment</b></font> 通过 <font color="red"><b>env.addSource(SourceFunction)</b></font> 获得。
+  DateStream上的转换操作都是逐条的，比如map(),flatmap(),filter()。DataStream也可以执行<font color="red"><b>rebalance</b></font> （再平衡，用于减轻数据倾斜）和 <font color="red"><b> broadcaseted </b></font> （广播）等分区转换。
+  
+- ***KeyedStream：***
+  ***KeyedStream***用来表示根据指定的key进行分组的数据流。一个KeyedStream可以通过调用***DataStream.keyby()*** 来获得。而在KeyedStream上进行任何的transformation都将转变回DataStream。在实现中KeyedStream是把key的信息写入到了transformation中。每条记录只能访问所属key的状态，其上的聚合函数可以方便地操作和保存对应key的状态。
+  
+- ***WindowedStream & AllWindowedStream***
+  ***WindowedStream***代表了根据key分组，并且基于***WindowAssigner***切分窗口的数据流。所以***WindowedStream***都是从***KeyedStream***衍生而来的。而在***WindowedStream***上进行任何操作也都将转变回***DataStream***。
+  Flink的窗口实现中会将到达的数据缓存在对应的窗口buffer中（一条数据可能对应多个窗口）。当到达窗口发送的条件时（由Trigger控制），Flink会对整个窗口中的数据进行处理。Flink在聚合类窗口有一定的优化，即不会保存窗口中的所有值，而是每到一个元素执行一次聚合函数，最终只保存一份数据即可。
+  在key分组的流上进行窗口切分是比较常用的场景，也能够很好地并行化（不同的key上的窗口聚合可以分配到不同的task去处理）。不过有时候我们也需要在普通流上进行窗口的操作，这就是 ***AllWindowedStream***。***AllWindowedStream****是直接在DataStream上进行***windowAll(...)*** 操作。***AllWindowedStream*** 的实现是基于 ***WindowedStream*** 的（Flink 1.1.x 开始）。Flink 不推荐使用***AllWindowedStream***，因为在普通流上进行窗口操作，就势必需要将所有分区的流都汇集到单个的Task中，而这个单个的Task很显然就会成为整个Job的瓶颈
+
+- ***JoinedStreams & CoGroupedStreams***
+  
+
 # Flink部署
 
 ## Flink集群角色
@@ -49,8 +66,36 @@ tags:
 
 ## Flink集群搭建
 
+- 进入conf路径，修改flink-conf.yaml文件，指定JobManager节点
+```
+# JobManager节点地址
+jobmanager.rpc.address: hadoop102
+jobmanager.bind-host: 0.0.0.0
+rest.address: hadoop102
+rest.bind-address: 0.0.0.0
+
+# TaskManager节点地址.需要配置为当前机器名
+taskmanager.bind-host: 0.0.0.0
+taskmanager.host: hadoop102
+```
+- 修改workers文件，指定TaskManager节点主机名
+- 修改masters文件，指定master节点以及端口号
+
+#### Flink常用命令
+```bash
+# Flink集群客户端启动命令
+bin/start-cluster.sh
+
+# 使用命令行提交flink任务
+bin/flink run -m linux1:port -c 主类名 jar包路径
 
 
+```
+
+
+# Flink运行时架构
+
+![[Pasted image 20240903163156.png]]
 
 ## 基于时间的合流-双流连结（Join）
 

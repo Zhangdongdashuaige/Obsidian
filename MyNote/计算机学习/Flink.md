@@ -132,3 +132,4 @@ Barrier对齐的精准一次
 Barrier不对齐的至少一次
 Barrier不对齐的至少一次
  
+sss

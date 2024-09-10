@@ -149,3 +149,4 @@ Barrier不对齐的至少一次
 2. 至少一次（At-Least-Once）
 3. 精确一次（Exactly-Once）
 check
+11

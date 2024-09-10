@@ -130,14 +130,21 @@
                 "file": "计算机学习/Flink.md"
               }
             }
+          },
+          {
+            "id": "ebbad32ae80ef9fb",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 307.5,
-    "collapsed": true
+    "width": 329.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -150,7 +157,7 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "213e388ede97acc4",
+  "active": "ebbad32ae80ef9fb",
   "lastOpenFiles": [
     "Pasted image 20240830090512.png",
     "Pasted image 20240830092338.png",

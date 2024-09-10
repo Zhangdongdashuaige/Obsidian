@@ -47,14 +47,16 @@ tags:
 - ***KeyedStream：***
   ***KeyedStream***用来表示根据指定的key进行分组的数据流。一个KeyedStream可以通过调用***DataStream.keyby()*** 来获得。而在KeyedStream上进行任何的transformation都将转变回DataStream。在实现中KeyedStream是把key的信息写入到了transformation中。每条记录只能访问所属key的状态，其上的聚合函数可以方便地操作和保存对应key的状态。
   
-- ***WindowedStream & AllWindowedStream***
+- ***WindowedStream & AllWindowedStream：***
   ***WindowedStream***代表了根据key分组，并且基于***WindowAssigner***切分窗口的数据流。所以***WindowedStream***都是从***KeyedStream***衍生而来的。而在***WindowedStream***上进行任何操作也都将转变回***DataStream***。
   Flink的窗口实现中会将到达的数据缓存在对应的窗口buffer中（一条数据可能对应多个窗口）。当到达窗口发送的条件时（由Trigger控制），Flink会对整个窗口中的数据进行处理。Flink在聚合类窗口有一定的优化，即不会保存窗口中的所有值，而是每到一个元素执行一次聚合函数，最终只保存一份数据即可。
   在key分组的流上进行窗口切分是比较常用的场景，也能够很好地并行化（不同的key上的窗口聚合可以分配到不同的task去处理）。不过有时候我们也需要在普通流上进行窗口的操作，这就是 ***AllWindowedStream***。***AllWindowedStream****是直接在DataStream上进行***windowAll(...)*** 操作。***AllWindowedStream*** 的实现是基于 ***WindowedStream*** 的（Flink 1.1.x 开始）。Flink 不推荐使用***AllWindowedStream***，因为在普通流上进行窗口操作，就势必需要将所有分区的流都汇集到单个的Task中，而这个单个的Task很显然就会成为整个Job的瓶颈
 
-- ***JoinedStreams & CoGroupedStreams***
-  
+- ***JoinedStreams & CoGroupedStreams：***
+  co-group侧重的是group，是对同一个key上的两组集合进行操作，而join侧重的是pair，是对同一个key上的每对元素进行操作。co-group比join更通用一些，因为join只是co-group的一个特例，所以join是可以基于co-group来实现的。提供join接口是因为用户更熟悉join，而且能够跟DataSetAPI保持一致，降低用户学习成本。
 
+- ***ConnectedStreams：
+  
 # Flink部署
 
 ## Flink集群角色
@@ -81,7 +83,7 @@ taskmanager.host: hadoop102
 - 修改workers文件，指定TaskManager节点主机名
 - 修改masters文件，指定master节点以及端口号
 
-#### Flink常用命令
+## Flink常用命令
 ```bash
 # Flink集群客户端启动命令
 bin/start-cluster.sh
@@ -91,6 +93,149 @@ bin/flink run -m linux1:port -c 主类名 jar包路径
 
 
 ```
+
+## Flink部署模式
+
+- ***会话模式（Session Mode）***
+  启动一个集群，保持会话，在这个会话中通过客户端提交作业。集群启动时所有资源已经确定，在这个会话中提交的作业会竞争资源。
+  会话模式比较适合于<font color="red"><b>单个规模小、执行时间短的大量作业</b></font>。
+  ![[Session-mode.drawio.png]]
+
+- ***单作业模式（Per-Job Mode）***
+  会话模式因为资源共享会导致很多问题，为了更好的隔离资源，考虑为每一个job启动一个集群，这就是***单作业模式***。
+  作业完成后，集群就会关闭，所有的资源也会释放。
+  单作业模式的特性使得其在生产环境下运行更加稳定，所以是<font color="red"><b>实际场景的首选模式</b></font>。
+  需要注意的是，Flink本身无法这样运行，所以单作业模式一般需要借助一些资源管理框架来启动集群，比如YARN、Kubernetes（K8S）。
+  ![[Per-Jobmode.png]]
+  
+- ***应用模式（Application Mode）***
+  ==前面提到的两种模式，应用代码都是在客户端上执行==。然后由客户端提交给JobManager的。但是这种方式==客户端需要占用大量的网络带宽==，去下载依赖和把二进制数据发送给JobManager；加上很多情况下我们提交作业用的是同一个客户端，==当作业较多时客户端所在的节点的资源消耗过多==。
+  解决办法时，取代客户端，直接把应用提交到JobManager上运行。由JobManager解析代码。这就意味着我们需要为每一个提交的应用单独启动一个JobManager，也就是创建一个集群。这个JobManager只为执行这一个应用而存在，执行结束后JobManager也就关闭了，这就是所谓的应用模式。
+  ![[Application Mode.png]]
+
+``` bash
+# 以会话模式启动Flink集群，启动集群后，可以在WebUI上提交作业
+bin/start-cluster.sh 
+
+# 命令行方式提交作业
+bin/flink run -m hadoop102:8081 -c 主类名 jar包路径
+
+###########################################################################
+# 以应用模式启动Flink集群
+bin/standalone-job.sh start --job-classname 主类名
+
+# 启动TaskManager
+bin/taskmanager.sh start
+
+# 终止集群
+bin/taskmanager.sh stop
+bin/stanalone-job.sh stop
+```
+
+## YARN运行模式
+
+YARN上部署的过程时：客户端把Flink应用提交给Yarn的ResourceManager，Yarn的ResourceManager会向Yarn的NodeManager申请容器。在这些容器上，Flink会部署JobManager和TaskManager的实例，从而启动集群。Flink会根据运行在JobManager上的作业所需要的Slot数量动态分配TaskManager资源。
+
+**相关配置***
+首先确认集群是否安装由Hadoop，保证Hadoop版本至少在2.2以上，并且集群中安装有HDFS服务。
+1. 配置环境变量
+``` bash
+HADOOP_HOME=/opt/module/hadoop
+export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
+export HADOOP_CONF_DIR=${HADOOP_HOME}/etc/hadoop
+export HADOOP_CALSSPATH=`hadoop classpath`
+```
+2. 启动Hadoop集群
+``` bash
+start-dfs.sh
+start-yarn.sh
+```
+
+***会话模式部署***
+YARN的会话模式部署时，首先需要申请一个YARN会话（YARN Session）来启动Flink集群。
+1. 启动Hadoop集群
+2. 执行脚本命令向YARN集群申请资源，开启一个YARN会话，启动Flink集群。
+``` bash
+# 启动一个YARN Session
+bin/yarn-session.sh -nm tests
+
+# 可用参数解读：
+# -d：分离模式，Flink YARN客户端后台运行
+# -jm(--jobManagerMemory)：配置Job Manager所需内存，默认单位MB
+# -nm(--name)：配置在YARN UI界面上显示的任务名
+# -qu(--queue)：指定YARN队列名
+# -tm(--taskManager)：配置每个TaskManager所使用内存
+
+# 通过命令行提交作业
+bin/flink run -c 主类名 jar包
+```   
+ ==Flink1.11.0版本不再使用-n参数和-s参数分别指定TaskManager数量和slot数量，YARN会按照需求动态分配TaskManager和slot
+ YARN Session启动之后会给出一个Web UI地址以及一个YARN application ID，如下所示，用户可以通过Web UI或者命令行两种方式提交作业==
+
+***单作业模式部署***
+在YARN环境中，由于有个外部平台做资源调度，所以我们也可以直接向YARN提交一个单独的作业，从而启动一个Flink集群。
+``` bash
+bin/flink run -d -t yarn-per-job -c 主类名 jar包
+
+# 使用命令行查看作业
+bin/flink list -t yarn-per-job -Dyarn.application.id=application_xxxx_yy
+
+# 使用命令行取消作业
+bin/flink cancel -t yarn-per-job -Dyarn.application.id=application_xxxx_yy <jobId>
+```
+==注意：如果启动过程中报如下异常==
+```
+Exception in thread “Thread-5” java.lang.IllegalStateException: Trying to access closed classloader. Please check if you store classloaders directly or indirectly in static fields. If the stacktrace suggests that the leak occurs in a third party library and cannot be fixed immediately, you can disable this check with the configuration ‘classloader.check-leaked-classloader’.
+
+at org.apache.flink.runtime.execution.librarycache.FlinkUserCodeClassLoaders
+```
+==解决方法==
+``` bash
+# 在flink的/opt/module/flink-1.17.0/conf/flink-conf.yaml配置文件中设置
+classloader.check-leaked-classloader：false
+```
+
+***应用模式部署***
+应用模式与单作业模式类似，直接执行flink run-application命令即可。
+``` bash
+# 执行命令提交作业
+bin/flink run-application -t yarn-application -c 主类名 jar包
+
+# 查看作业
+bin/flink list -t yarn-application -Dyarn.application.id=application_xxxx_yy
+
+# 取消作业
+bin/flink cancel -t yarn-application -Dyarn.application.id=application_xxxx_yy <jobId>
+
+# jar包在HDFS上提交作业
+bin/flink run-application -t yarn-application -Dyarn.provided.lib.dirs="hdfs://node:port/flink-dist" -c 主类名 hdfs路径
+```
+
+***历史服务器***
+运行Flink job的集群一旦定制，只能去yarn或本地磁盘上产看日志，不再可以查看作业挂掉之前运行的Web UI，Flink提供了历史服务器用来在相应的Flink集群关闭后查询已完成作业的统计信息。我们知道只有当作业处于运行中的状态，才能查看到相关的Web UI统计信息。通过History Server我们才能查询这些已完成作业的统计信息，无论正常退出还是异常退出。
+此外，它对外提供了REST API，它接受HTTP请求并使用JSON数据进行相应。Flink任务停止后，JobManager会将已经完成任务的统计信息进行存档，History Server进程则在任务停止后可以对任务统计信息进行查询。比如：最后一次的Checkpoint、任务运行时的相关配置。
+1. 创建存储目录
+``` bash
+hadoop fs -mkdir -p /log/flink-job
+```
+2. 在flink-config.yaml中添加如下配置
+``` bash
+jobmanager.archive.fs.dir: hdfs://hadoop102:8020/logs/flink-job
+historyserver.web.address: hadoop102
+historyserver.web.port: 8082
+historyserver.archive.fs.dir: hdfs://hadoop102:8020/logs/flink-job
+historyserver.archive.fs.refresh-interval: 5000
+```
+3. 启动历史服务器
+``` bash
+bin/historyserver.sh start
+```
+4. 停止历史服务器
+``` bash
+bin/historyserver.sh stop
+```
+
+
 
 
 # Flink运行时架构

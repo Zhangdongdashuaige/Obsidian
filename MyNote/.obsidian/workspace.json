@@ -64,13 +64,21 @@
               "type": "bookmarks",
               "state": {}
             }
+          },
+          {
+            "id": "ebbad32ae80ef9fb",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 269.5,
     "collapsed": true
   },
   "right": {
@@ -130,21 +138,14 @@
                 "file": "计算机学习/Flink.md"
               }
             }
-          },
-          {
-            "id": "ebbad32ae80ef9fb",
-            "type": "leaf",
-            "state": {
-              "type": "git-history-view",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 329.5
+    "width": 266.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -157,12 +158,16 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "ebbad32ae80ef9fb",
+  "active": "213e388ede97acc4",
   "lastOpenFiles": [
+    "Application Mode.png",
+    "Per-Jobmode.png",
+    "Session-mode.drawio.png",
+    "Session-mode.drawio",
+    "计算机学习/Flink.md",
     "Pasted image 20240830090512.png",
     "Pasted image 20240830092338.png",
     "Pasted image 20240903163156.png",
-    "计算机学习/Flink.md",
     "计算机学习/Git.md",
     "工作/报表报错问题探查.md",
     "MarkDown超级教程 Obsidian版 2022.1.12.md",

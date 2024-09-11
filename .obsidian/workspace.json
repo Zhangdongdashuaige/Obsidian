@@ -1,19 +1,19 @@
 {
   "main": {
-    "id": "150b3c9dcf0332cc",
+    "id": "57f97817c3fe307e",
     "type": "split",
     "children": [
       {
-        "id": "99f3018c66a8e0ba",
+        "id": "cb2b4f060a3d3271",
         "type": "tabs",
         "children": [
           {
-            "id": "213e388ede97acc4",
+            "id": "a002b01f608cb4ce",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机学习/Flink.md",
+                "file": "MyNote/计算机学习/Flink.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "515ae721da691895",
+    "id": "cec424896d3a7502",
     "type": "split",
     "children": [
       {
-        "id": "30910aa5068d6753",
+        "id": "146a0cfe17a7db62",
         "type": "tabs",
         "children": [
           {
-            "id": "4e30f0fbee93d74c",
+            "id": "eb9f2b6c3516774e",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,12 +43,12 @@
             }
           },
           {
-            "id": "30c07cad4219d268",
+            "id": "b73841f6a7120169",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "histor",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -58,67 +58,59 @@
             }
           },
           {
-            "id": "60bc62206030a300",
+            "id": "6a1727e8d9446429",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {}
             }
-          },
-          {
-            "id": "ebbad32ae80ef9fb",
-            "type": "leaf",
-            "state": {
-              "type": "git-history-view",
-              "state": {}
-            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 269.5,
-    "collapsed": true
+    "width": 211.5
   },
   "right": {
-    "id": "d892f8554b643a01",
+    "id": "cfc43463851c431d",
     "type": "split",
     "children": [
       {
-        "id": "e89d0f8241b0b29c",
+        "id": "6861af83a23613b9",
         "type": "tabs",
         "children": [
           {
-            "id": "014b3eb481fb6a77",
+            "id": "011f00673b3ebcb3",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "计算机学习/Flink.md",
+                "file": "MyNote/计算机学习/Flink.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": true,
+                "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "2df00b9445295f21",
+            "id": "c77501a17d6e684a",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "计算机学习/Flink.md",
+                "file": "MyNote/计算机学习/Flink.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "f56befabe6254cf4",
+            "id": "9af91d168c486d5d",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -129,21 +121,21 @@
             }
           },
           {
-            "id": "88f491d4b541c4f1",
+            "id": "111f5a5c6658610a",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机学习/Flink.md"
+                "file": "MyNote/计算机学习/Flink.md"
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 266.5,
+    "width": 300,
     "collapsed": true
   },
   "left-ribbon": {
@@ -153,44 +145,9 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
-      "markdown-importer:打开 Markdown 格式转换器": false
+      "command-palette:打开命令面板": false
     }
   },
-  "active": "213e388ede97acc4",
-  "lastOpenFiles": [
-    "Application Mode.png",
-    "Per-Jobmode.png",
-    "Session-mode.drawio.png",
-    "Session-mode.drawio",
-    "计算机学习/Flink.md",
-    "Pasted image 20240830090512.png",
-    "Pasted image 20240830092338.png",
-    "Pasted image 20240903163156.png",
-    "计算机学习/Git.md",
-    "工作/报表报错问题探查.md",
-    "MarkDown超级教程 Obsidian版 2022.1.12.md",
-    "[Flink中Barrier对齐机制_flink.md",
-    "conflict-files-obsidian-git.md",
-    "2024-08-20.md",
-    "2024-08-12.md",
-    "create a link.md",
-    "未命名.canvas",
-    "考研/政治/政治.md",
-    "考研/英语/考研语法.md",
-    "考研/政治",
-    "考研/英语/生词.md",
-    "考研/英语/List 7.md",
-    "未命名",
-    "考研/数学/未命名.md",
-    "考研/数学",
-    "考研/英语",
-    "考研/数学/第二节 极限.md",
-    "345422b04ca9c1a06e1e796a905a2ad 1.png",
-    "345422b04ca9c1a06e1e796a905a2ad.png",
-    "计算机学习",
-    "工作",
-    "考研",
-    "2024-05-31.md"
-  ]
+  "active": "b73841f6a7120169",
+  "lastOpenFiles": []
 }

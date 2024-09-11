@@ -248,9 +248,9 @@ bin/historyserver.sh stop
 
 # 处理函数
 
-# 8. 状态
+# 状态
 
-## 8.1 什么是状态
+## 什么是状态
 
 Flink中算子可以分为 ***有状态*** 和 ***无状态*** 两种。基本转换算子计算时不依赖其他数据，属于无状态算子；而有状态的算子，除了当前数据之外，还需要一些其他数据来得到计算结果，这里的其他数据，就是 ***状态*** 。
 
@@ -261,11 +261,11 @@ Flink中算子可以分为 ***有状态*** 和 ***无状态*** 两种。基本�
 3. 根据业务逻辑进行计算，更新状态；
 4. 得到计算结果，输出发送到下游任务
 
-## 8.2 状态的分类
+## 状态的分类
 
-#### 1. 托管状态（Managed State）和原始状态（Raw State）
+## 托管状态（Managed State）和原始状态（Raw State）
 
-## 8.4 状态后端（HashMapStateBackend/RocksDB）
+## 状态后端（HashMapStateBackend/RocksDB）
 
 (1)  
 
@@ -293,3 +293,9 @@ Barrier不对齐的至少一次
 1. 最多一次（At-Most-Once）
 2. 至少一次（At-Least-Once）
 3. 精确一次（Exactly-Once）
+
+
+
+
+# FlinkSQL
+

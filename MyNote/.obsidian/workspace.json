@@ -33,16 +33,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4e30f0fbee93d74c",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical"
-              }
-            }
-          },
-          {
             "id": "30c07cad4219d268",
             "type": "leaf",
             "state": {
@@ -66,15 +56,38 @@
             }
           },
           {
-            "id": "ebbad32ae80ef9fb",
+            "id": "4e30f0fbee93d74c",
             "type": "leaf",
             "state": {
-              "type": "git-history-view",
-              "state": {}
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f56befabe6254cf4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "88f491d4b541c4f1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "计算机学习/Flink.md"
+              }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -119,32 +132,19 @@
             }
           },
           {
-            "id": "f56befabe6254cf4",
+            "id": "ebbad32ae80ef9fb",
             "type": "leaf",
             "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
-              }
-            }
-          },
-          {
-            "id": "88f491d4b541c4f1",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "计算机学习/Flink.md"
-              }
+              "type": "git-history-view",
+              "state": {}
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 266.5,
+    "width": 311.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -158,7 +158,7 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "213e388ede97acc4",
+  "active": "60bc62206030a300",
   "lastOpenFiles": [
     "Application Mode.png",
     "Per-Jobmode.png",

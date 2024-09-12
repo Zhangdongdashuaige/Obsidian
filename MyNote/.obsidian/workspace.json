@@ -87,7 +87,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -158,7 +158,7 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "60bc62206030a300",
+  "active": "ebbad32ae80ef9fb",
   "lastOpenFiles": [
     "Application Mode.png",
     "Per-Jobmode.png",

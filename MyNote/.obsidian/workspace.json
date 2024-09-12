@@ -87,12 +87,11 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 269.5,
-    "collapsed": true
+    "width": 269.5
   },
   "right": {
     "id": "d892f8554b643a01",
@@ -158,7 +157,7 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "ebbad32ae80ef9fb",
+  "active": "4e30f0fbee93d74c",
   "lastOpenFiles": [
     "Application Mode.png",
     "Per-Jobmode.png",

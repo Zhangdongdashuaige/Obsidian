@@ -1,0 +1,153 @@
+{
+  "main": {
+    "id": "57f97817c3fe307e",
+    "type": "split",
+    "children": [
+      {
+        "id": "cb2b4f060a3d3271",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a002b01f608cb4ce",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MyNote/计算机学习/Flink.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cec424896d3a7502",
+    "type": "split",
+    "children": [
+      {
+        "id": "146a0cfe17a7db62",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eb9f2b6c3516774e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b73841f6a7120169",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "histor",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6a1727e8d9446429",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 211.5
+  },
+  "right": {
+    "id": "cfc43463851c431d",
+    "type": "split",
+    "children": [
+      {
+        "id": "6861af83a23613b9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "011f00673b3ebcb3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "MyNote/计算机学习/Flink.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c77501a17d6e684a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "MyNote/计算机学习/Flink.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9af91d168c486d5d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "111f5a5c6658610a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "MyNote/计算机学习/Flink.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "b73841f6a7120169",
+  "lastOpenFiles": []
+}

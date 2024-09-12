@@ -293,13 +293,9 @@ Barrier不对齐的至少一次
 1. 最多一次（At-Most-Once）
 2. 至少一次（At-Least-Once）
 3. 精确一次（Exactly-Once）
-<<<<<<< HEAD
 
 
 
 
 # FlinkSQL
 
-=======
-/commit
->>>>>>> 5cb5f251d35ee261b9561ec4c33320a1ba46b43e

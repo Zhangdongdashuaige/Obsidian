@@ -266,7 +266,7 @@ _JobManager_ 具有许多与协调 Flink 应用程序的分布式执行有关�
 _TaskManager_（也称为 _worker_）执行作业流的 task，并且缓存和交换数据流。
 
 必须始终至少有一个 TaskManager。在 TaskManager 中资源调度的最小单位是 task _slot_。TaskManager 中 task slot 的数量表示并发处理 task 的数量。请注意一个 task slot 中可以执行多个算子（请参考[Tasks 和算子链](https://nightlies.apache.org/flink/flink-docs-release-1.17/zh/docs/concepts/flink-architecture/#tasks-and-operator-chains)）。
-/push
+
 
 ## 基于时间的合流-双流连结（Join）
 

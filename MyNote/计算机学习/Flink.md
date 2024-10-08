@@ -221,8 +221,6 @@ bin/historyserver.sh stop
 ```
 
 
-
-
 # Flink运行时架构
 ***
 #以下信息全部来自于Flink官方文档
@@ -296,6 +294,22 @@ Flink 应用程序的作业可以被提交到长期运行的 [Flink Session 集
 - **资源隔离**：在 Flink Application 集群中，ResourceManager 和 Dispatcher 作用于单个的 Flink 应用程序，相比于 Flink Session 集群，它提供了更好的隔离。
 
 > Flink Job 集群可以看做是 Flink Application 集群”客户端运行“的替代方案。
+
+## 作业提交流程
+
+#### Standalone会话模式作业提交流程
+![[Pasted image 20241008160026.png]]
+#### 逻辑流图/作业图/执行图/物理流图
+1. 逻辑流图
+   根据用户通过DataStream API编写的代码生成的最初的DAG图，用来表示程序的拓扑结构。这一步一般在客户端完成。
+2. 作业图
+   StreamGraph经过优化后生成的就是作业无（JobGraph），这是提交给JobManager的数据结构，确定了当前作业中所有任务的划分。主要的优化为：将多个符合条件的节点链接在一起合并成一个任务节点，形成算子链，这样可以减少数据交换的消耗。JobGraph一般也是在客户端生成的，在作业提交时传递给JobMaster。
+3. 执行图
+   JobMaster收到JobGraph后，会根据它生成执行图（ExecutionGraph）。ExecutionGraph是JobGraph的并行化版本，是调度层最核心的数据结构。与JobGraph最大的区别就是按照并行度对并行子任务进行了拆分，并明确了任务间数据传输的方式。
+4. 物理图
+   JobMaster生成执行图后，会将它分发给TaskManager；各个TaskManager会根据执行图部署任务，最终的物理执行过程也会形成一张“图”，一般就叫作物理图（Physical Graph）。这只是具体执行层面的图，并不是一个具体的数据结构。
+   物理图主要就是在执行图的基础上，进一步确定数据存放的位置和收发的具体方式。有了物理图，TaskManager就可以对传递来的数据进行处理计算了。
+
 ## 基于时间的合流-双流连结（Join）
 
 在interval-join时，只要数据的**事务时间**小于当前的**watermark**，则该条数据为迟到数据，不对其进行处理，可以在测输出流中将其输出。

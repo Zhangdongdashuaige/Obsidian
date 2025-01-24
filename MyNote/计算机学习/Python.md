@@ -10,7 +10,7 @@
  len() # 获取字符串长度
 
 # 字符串切片
-s[start:end:strp]
+s[start:end:step]
 ```
 
 ## 列表

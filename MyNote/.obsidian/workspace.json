@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机学习/大数据面试.md",
+                "file": "计算机学习/JVM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "大数据面试"
+              "title": "JVM"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机学习/JVM.md",
+                "file": "计算机学习/Git.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JVM"
+              "title": "Git"
             }
           },
           {
@@ -49,8 +49,7 @@
               "title": "MarkDown超级教程 Obsidian版 2022.1.12"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -205,15 +204,15 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "c7175a357729f7da",
+  "active": "e04042bf5317463c",
   "lastOpenFiles": [
     "计算机学习/Java.md",
+    "计算机学习/大数据面试.md",
+    "计算机学习/Git.md",
+    "计算机学习/JVM.md",
     "计算机学习/Flink.md",
     "计算机学习/Spark.md",
     "计算机学习/Python.md",
-    "计算机学习/Git.md",
-    "计算机学习/JVM.md",
-    "计算机学习/大数据面试.md",
     "Pasted image 20250206170830.png",
     "计算机学习/参考文档.md",
     "MarkDown超级教程 Obsidian版 2022.1.12.md",

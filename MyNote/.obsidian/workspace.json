@@ -22,18 +22,6 @@
             }
           },
           {
-            "id": "88df5100a9ee39b0",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.10"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.10"
-            }
-          },
-          {
             "id": "c7175a357729f7da",
             "type": "leaf",
             "state": {
@@ -61,8 +49,7 @@
               "title": "MarkDown超级教程 Obsidian版 2022.1.12"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +109,9 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
@@ -134,10 +123,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机学习/大数据面试.md"
+                "file": "计算机学习/JVM.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 大数据面试"
+              "title": "Outline of JVM"
             }
           }
         ],
@@ -180,12 +172,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "计算机学习/大数据面试.md",
+                "file": "计算机学习/JVM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 大数据面试"
+              "title": "Outgoing links from JVM"
             }
           },
           {
@@ -217,7 +209,7 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "88df5100a9ee39b0",
+  "active": "e04042bf5317463c",
   "lastOpenFiles": [
     "计算机学习/Java.md",
     "计算机学习/大数据面试.md",

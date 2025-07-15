@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "88df5100a9ee39b0",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.10"
+            }
+          },
+          {
             "id": "c7175a357729f7da",
             "type": "leaf",
             "state": {
@@ -49,7 +61,8 @@
               "title": "MarkDown超级教程 Obsidian版 2022.1.12"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -204,7 +217,7 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "e04042bf5317463c",
+  "active": "88df5100a9ee39b0",
   "lastOpenFiles": [
     "计算机学习/Java.md",
     "计算机学习/大数据面试.md",

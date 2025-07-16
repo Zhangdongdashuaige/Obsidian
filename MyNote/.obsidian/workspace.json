@@ -16,9 +16,7 @@
                 "file": "计算机学习/JVM.md",
                 "mode": "source",
                 "source": false
-              },
-              "icon": "lucide-file",
-              "title": "JVM"
+              }
             }
           },
           {
@@ -30,9 +28,7 @@
                 "file": "计算机学习/Git.md",
                 "mode": "source",
                 "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Git"
+              }
             }
           }
         ]
@@ -60,9 +56,7 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              },
-              "icon": "lucide-search",
-              "title": "Search"
+              }
             }
           },
           {
@@ -70,9 +64,7 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
-              "icon": "lucide-bookmark",
-              "title": "Bookmarks"
+              "state": {}
             }
           },
           {
@@ -81,11 +73,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "文件列表"
+                "sortOrder": "alphabetical"
+              }
             }
           },
           {
@@ -95,12 +84,8 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Tags"
+                "useHierarchy": true
+              }
             }
           },
           {
@@ -109,17 +94,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机学习/JVM.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of JVM"
+                "file": "计算机学习/JVM.md"
+              }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -140,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "计算机学习/大数据面试.md",
+                "file": "计算机学习/JVM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,9 +128,7 @@
                 "searchQuery": "",
                 "backlinkCollapsed": true,
                 "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for 大数据面试"
+              }
             }
           },
           {
@@ -162,9 +140,7 @@
                 "file": "计算机学习/JVM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "JVM 的出链列表"
+              }
             }
           },
           {
@@ -172,9 +148,7 @@
             "type": "leaf",
             "state": {
               "type": "git-history-view",
-              "state": {},
-              "icon": "history",
-              "title": "History"
+              "state": {}
             }
           }
         ],
@@ -198,7 +172,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e04042bf5317463c",
+  "active": "88f491d4b541c4f1",
   "lastOpenFiles": [
     "计算机学习/Git.md",
     "计算机学习/JVM.md",

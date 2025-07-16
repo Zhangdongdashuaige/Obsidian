@@ -109,7 +109,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 269.5
+    "width": 269.5,
+    "collapsed": true
   },
   "right": {
     "id": "d892f8554b643a01",
@@ -185,18 +186,19 @@
   },
   "active": "e04042bf5317463c",
   "lastOpenFiles": [
+    "2025-01-01.md",
+    "计算机学习/JVM.md",
+    "计算机学习/Java.md",
+    "计算机学习/Flink.md",
+    "计算机学习/Git.md",
     "img/JVM-2.png",
     "img/JVM-1.png",
     "img/Pasted image 20250206170830.png",
-    "计算机学习/JVM.md",
-    "计算机学习/Java.md",
     "img",
     "Pasted image 20250716111250.png",
     "计算机学习/Python.md",
     "计算机学习/Spark.md",
     "计算机学习/大数据面试.md",
-    "计算机学习/Git.md",
-    "计算机学习/Flink.md",
     "计算机学习/参考文档.md",
     "MarkDown超级教程 Obsidian版 2022.1.12.md",
     "工作/报表报错问题探查.md",

@@ -35,7 +35,8 @@
               "title": "Git"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -159,12 +160,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "计算机学习/JVM.md",
+                "file": "计算机学习/Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "JVM 的出链列表"
+              "title": "Git 的出链列表"
             }
           },
           {
@@ -198,10 +199,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e04042bf5317463c",
+  "active": "dcfbfb13208370a8",
   "lastOpenFiles": [
-    "计算机学习/Git.md",
     "计算机学习/JVM.md",
+    "计算机学习/Git.md",
     "2025-01-01.md",
     "计算机学习/Java.md",
     "计算机学习/Flink.md",

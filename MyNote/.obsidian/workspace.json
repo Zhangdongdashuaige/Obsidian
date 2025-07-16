@@ -109,8 +109,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 269.5,
-    "collapsed": true
+    "width": 269.5
   },
   "right": {
     "id": "d892f8554b643a01",
@@ -150,7 +149,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from JVM"
+              "title": "JVM 的出链列表"
             }
           },
           {
@@ -159,8 +158,8 @@
             "state": {
               "type": "git-history-view",
               "state": {},
-              "icon": "lucide-file",
-              "title": "插件不再活动"
+              "icon": "history",
+              "title": "History"
             }
           }
         ],
@@ -186,8 +185,8 @@
   },
   "active": "e04042bf5317463c",
   "lastOpenFiles": [
-    "2025-01-01.md",
     "计算机学习/JVM.md",
+    "2025-01-01.md",
     "计算机学习/Java.md",
     "计算机学习/Flink.md",
     "计算机学习/Git.md",

@@ -127,7 +127,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 269.5
+    "width": 247.5
   },
   "right": {
     "id": "d892f8554b643a01",
@@ -211,7 +211,7 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "88f491d4b541c4f1",
+  "active": "e04042bf5317463c",
   "lastOpenFiles": [
     "计算机学习/Flink.md",
     "计算机学习/JVM.md",

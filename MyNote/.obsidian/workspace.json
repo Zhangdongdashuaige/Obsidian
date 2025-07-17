@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机学习/Flink.md",
+                "file": "计算机学习/JVM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Flink"
+              "title": "JVM"
             }
           }
         ]
@@ -95,13 +95,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机学习/Flink.md",
+                "file": "计算机学习/JVM.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Flink 的大纲"
+              "title": "JVM 的大纲"
             }
           }
         ],
@@ -109,8 +109,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 269.5,
-    "collapsed": true
+    "width": 269.5
   },
   "right": {
     "id": "d892f8554b643a01",
@@ -186,12 +185,12 @@
   },
   "active": "e04042bf5317463c",
   "lastOpenFiles": [
+    "计算机学习/Flink.md",
     "计算机学习/JVM.md",
     "conflict-files-obsidian-git.md",
     "计算机学习/Git.md",
     "2025-01-01.md",
     "计算机学习/Java.md",
-    "计算机学习/Flink.md",
     "img/JVM-2.png",
     "img/JVM-1.png",
     "img/Pasted image 20250206170830.png",

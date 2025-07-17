@@ -200,11 +200,13 @@
       "command-palette:打开命令面板": false,
       "markdown-importer:打开 Markdown 格式转换器": false,
       "workspaces:管理工作区布局": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "templater-obsidian:Templater": false
     }
   },
   "active": "e04042bf5317463c",
   "lastOpenFiles": [
+    "类加载流程图.png",
     "MarkDown超级教程 Obsidian版 2022.1.12.md",
     "计算机学习/JVM.md",
     "img/slot复用.png",

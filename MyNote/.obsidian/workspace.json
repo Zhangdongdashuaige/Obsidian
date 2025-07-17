@@ -33,7 +33,6 @@
       {
         "id": "30910aa5068d6753",
         "type": "tabs",
-        "dimension": 69.1919191919192,
         "children": [
           {
             "id": "30c07cad4219d268",
@@ -107,23 +106,6 @@
           }
         ],
         "currentTab": 2
-      },
-      {
-        "id": "ad038da8adad889f",
-        "type": "tabs",
-        "dimension": 30.80808080808081,
-        "children": [
-          {
-            "id": "19da3dcd4605db0b",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
-            }
-          }
-        ]
       }
     ],
     "direction": "horizontal",
@@ -176,8 +158,8 @@
             "state": {
               "type": "git-history-view",
               "state": {},
-              "icon": "history",
-              "title": "History"
+              "icon": "lucide-file",
+              "title": "插件不再活动"
             }
           },
           {
@@ -186,8 +168,18 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-file",
+              "title": "插件不再活动"
+            }
+          },
+          {
+            "id": "a132ca9d055190b1",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           }
         ],
@@ -207,8 +199,8 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "markdown-importer:打开 Markdown 格式转换器": false,
-      "obsidian-git:Open Git source control": false,
-      "workspaces:管理工作区布局": false
+      "workspaces:管理工作区布局": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "e04042bf5317463c",

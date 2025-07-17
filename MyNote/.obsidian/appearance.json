@@ -3,5 +3,8 @@
   "theme": "system",
   "cssTheme": "Minimal",
   "baseFontSizeAction": true,
-  "nativeMenus": false
+  "nativeMenus": false,
+  "enabledCssSnippets": [
+    "bt"
+  ]
 }

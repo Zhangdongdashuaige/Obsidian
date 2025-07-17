@@ -32,3 +32,10 @@ body {
 .cm-line, .markdown-preview-section {
   font-size: var(--font-text-size);
 }
+
+.yellow-bold {
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  padding: 2px 4px;
+}

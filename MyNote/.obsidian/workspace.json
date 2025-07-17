@@ -33,6 +33,7 @@
       {
         "id": "30910aa5068d6753",
         "type": "tabs",
+        "dimension": 69.1919191919192,
         "children": [
           {
             "id": "30c07cad4219d268",
@@ -48,7 +49,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "搜索"
             }
           },
           {
@@ -86,7 +87,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "Tags"
+              "title": "标签"
             }
           },
           {
@@ -106,6 +107,23 @@
           }
         ],
         "currentTab": 2
+      },
+      {
+        "id": "ad038da8adad889f",
+        "type": "tabs",
+        "dimension": 30.808080808080806,
+        "children": [
+          {
+            "id": "19da3dcd4605db0b",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
@@ -149,7 +167,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "JVM 的出链列表"
+              "title": "Outgoing links from JVM"
             }
           },
           {
@@ -163,17 +181,7 @@
             }
           },
           {
-            "id": "9d150d29e4068224",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
-            }
-          },
-          {
-            "id": "77376bb06ede5604",
+            "id": "0cb5a72769fb80b1",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -183,7 +191,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -199,8 +207,8 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "markdown-importer:打开 Markdown 格式转换器": false,
-      "workspaces:管理工作区布局": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "workspaces:管理工作区布局": false
     }
   },
   "active": "e04042bf5317463c",

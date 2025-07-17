@@ -1,12 +1,12 @@
 [
   "obsidian-icon-folder",
   "dataview",
-  "obsidian-minimal-settings",
   "obsidian-git",
   "oz-clear-unused-images",
   "obsidian-image-toolkit",
   "obsidian-paste-image-rename",
   "mousewheel-image-zoom",
   "calendar",
-  "obsidian-style-settings"
+  "obsidian-style-settings",
+  "obsidian-minimal-settings"
 ]

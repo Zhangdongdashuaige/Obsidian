@@ -26,6 +26,9 @@ cssclasses:
 - 从zip，jar等归档文件中加载.class文件
 - 从专有数据库中提取.class文件
 - 将Java源文件动态编译为.class文件
+
+### 链接
+
 # JVM内存结构
 ---
 ![[JVM-1.png]]

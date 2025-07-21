@@ -1,0 +1,41 @@
+/* 基础字体大小设置 */
+body {
+  --font-text-size: 16px; /* 正文字体大小，可以调整为你喜欢的值 */
+}
+
+/* 标题级别字体大小设置 */
+.cm-header-1, .markdown-preview-view h1 {
+  font-size: calc(var(--font-text-size) * 1.8);
+}
+
+.cm-header-2, .markdown-preview-view h2 {
+  font-size: calc(var(--font-text-size) * 1.6);
+}
+
+.cm-header-3, .markdown-preview-view h3 {
+  font-size: calc(var(--font-text-size) * 1.4);
+}
+
+.cm-header-4, .markdown-preview-view h4 {
+  font-size: calc(var(--font-text-size) * 1.2);
+}
+
+.cm-header-5, .markdown-preview-view h5 {
+  font-size: calc(var(--font-text-size) * 1.1);
+}
+
+.cm-header-6, .markdown-preview-view h6 {
+  font-size: var(--font-text-size);
+}
+
+/* 正文字体大小 */
+.cm-line, .markdown-preview-section {
+  font-size: var(--font-text-size);
+}
+
+.yellow-bold {
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  padding: 2px 4px;
+}

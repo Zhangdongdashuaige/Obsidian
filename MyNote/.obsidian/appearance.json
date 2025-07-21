@@ -1,4 +1,11 @@
 {
   "accentColor": "",
-  "theme": "moonstone"
+  "theme": "system",
+  "cssTheme": "Minimal",
+  "baseFontSizeAction": true,
+  "nativeMenus": false,
+  "enabledCssSnippets": [
+    "bt"
+  ],
+  "baseFontSize": 16
 }

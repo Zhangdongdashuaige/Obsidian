@@ -35,6 +35,7 @@
           {
             "id": "30910aa5068d6753",
             "type": "tabs",
+            "dimension": 69.1919191919192,
             "children": [
               {
                 "id": "30c07cad4219d268",
@@ -50,7 +51,7 @@
                     "sortOrder": "alphabetical"
                   },
                   "icon": "lucide-search",
-                  "title": "Search"
+                  "title": "搜索"
                 }
               },
               {
@@ -60,7 +61,7 @@
                   "type": "bookmarks",
                   "state": {},
                   "icon": "lucide-bookmark",
-                  "title": "Bookmarks"
+                  "title": "书签"
                 }
               },
               {
@@ -88,7 +89,7 @@
                     "searchQuery": ""
                   },
                   "icon": "lucide-tags",
-                  "title": "Tags"
+                  "title": "标签"
                 }
               },
               {
@@ -103,11 +104,28 @@
                     "searchQuery": ""
                   },
                   "icon": "lucide-list",
-                  "title": "Outline of JVM"
+                  "title": "JVM 的大纲"
                 }
               }
             ],
             "currentTab": 2
+          },
+          {
+            "id": "ad038da8adad889f",
+            "type": "tabs",
+            "dimension": 30.808080808080806,
+            "children": [
+              {
+                "id": "19da3dcd4605db0b",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {},
+                  "icon": "calendar-with-checkmark",
+                  "title": "Calendar"
+                }
+              }
+            ]
           }
         ],
         "direction": "horizontal",
@@ -163,9 +181,19 @@
                   "icon": "history",
                   "title": "History"
                 }
+              },
+              {
+                "id": "0cb5a72769fb80b1",
+                "type": "leaf",
+                "state": {
+                  "type": "git-view",
+                  "state": {},
+                  "icon": "git-pull-request",
+                  "title": "Source Control"
+                }
               }
             ],
-            "currentTab": 2
+            "currentTab": 3
           }
         ],
         "direction": "horizontal",
@@ -186,7 +214,7 @@
         }
       },
       "active": "e04042bf5317463c",
-      "mtime": "2025-07-15T14:51:24+08:00"
+      "mtime": "2025-07-17T11:24:43+08:00"
     }
   },
   "active": "1"

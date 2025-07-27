@@ -216,6 +216,6 @@ JVM在进行GC时，并非每次都对上面三个内存（新生代、老年代
 2. 老年代空间不足
 3. 方法区空间不足
 4. 通过Minor GC后进入老年代的平均大小大于老年代的可用内存
-5. 由Eden区、Survivor space0（From Space）区向survivor space1（To Spacr）区复制时，对象大小大于To Space可用内存，则把该对象转存到老年代，且老年代的可用内存小于该对象大小
+5. 由Eden区、Survivor space0（From Space）区向survivor space1（To Spacr）区复制时，对象大小大于To Space可用内存，则把该对象转存到老年代，且老年代的可用内存小于该对象大小  
 <span class="yellow-bold">说明：full gc是开发或调优中尽量要避免的。这样暂时时间会短一些</span>
-1
+

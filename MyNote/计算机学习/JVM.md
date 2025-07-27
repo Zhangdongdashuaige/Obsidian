@@ -198,9 +198,24 @@ JVM在进行GC时，并非每次都对上面三个内存（新生代、老年代
         - 目前，只有G1,G2会有这种行为
 - 整堆收集（Full GC）：收集整个Java堆和方法区的垃圾收集
 
+### GC触发机制
 **年轻代GC（Minor GC）触发机制：**
 - 当年轻代空间不足时，就会触发Minor GC这里年轻代满指的是Eden代满，Survivor满不会引发GC。每次（Minor GC会清理年轻代的内存。）
 - 因为java对象大多都具备朝生夕灭的特性，所以Minor GC非常频繁，一般回收速度也比较快。这一定义既清晰又易于理解
 - Minor GC会引发STW(stop the world)，暂停其他用户的线程，等垃圾回收结束，用户线程才回复运行
  **老年代GC（Major GC/Full GC）触发机制：**
- - 指发生在老年代的GC，对象从老年代消失时
+ - 指发生在老年代的GC，对象从老年代消失时，我们说“Major GC”或“Full GC”发生了
+ - 出现了Major GC，经常会伴随至少一次的Minor GC（但非绝对的，在Parallel Scavenge收集器的收集策略里就有直接进行Major GC的策略选择过程）
+     - 也就是在老年代空间不足时，会先尝试触发Minor GC。如果之后空间还不足，则触发Major GC
+- Major GC的速度一般会Minor GC慢10倍以上，STW的时间更长
+- 如果Major GC后，内存还不足，就报OOM
+
+**Full GC触发机制：**
+触发Full GC执行的情况有如下五种：
+1. 调用System.gc()时，系统建议执行Full GC，但是不必然执行
+2. 老年代空间不足
+3. 方法区空间不足
+4. 通过Minor GC后进入老年代的平均大小大于老年代的可用内存
+5. 由Eden区、Survivor space0（From Space）区向survivor space1（To Spacr）区复制时，对象大小大于To Space可用内存，则把该对象转存到老年代，且老年代的可用内存小于该对象大小
+<span class="yellow-bold">说明：full gc是开发或调优中尽量要避免的。这样暂时时间会短一些</span>
+

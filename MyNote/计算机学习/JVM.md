@@ -37,7 +37,7 @@ cssclasses:
 - 符号引用就是一组符号来描述所引用的目标，符号引用的字面量形式明确定义在《java虚拟机规范》的Class文件格式中，直接引用就是直接指向目标的指针，相对偏移量或一个简介定位到目标的句柄
 - 解析动作主要针对类或接口、字段、类方法、接口方法、方法类型等，对应常量池中的CONSTANT_Class_info、CONSTANT_Fieldref_info、CONSTANT_Methodref_info等
 
-/comm
+
 
 
 

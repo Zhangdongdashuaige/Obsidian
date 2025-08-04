@@ -391,3 +391,8 @@ JVM在进行GC时，并非每次都对上面三个内存（新生代、老年代
     - `-X:MaxPermSize` 来设定永久代最大可分配空间。32位机器默认是64M，64位机器默认是82M
     - 当jvm加载的类信息容量超过了这个值，会报异常OutOfMemoryError:PermGenspace
 - JDK8及以后
+    - 元数据区的大小可以使用参数：`-XX:MetaspaceSize` 和 `-XX:MaxMetaspaceSize` 指定，替代上述原有的两个参数
+    - 默认值依赖于平台。Windos下，`-XX:MetaspaceSize` 是21M `-XX:MaxMetaspaceSize` 的值是-1，即没有限制
+    - 与永久代不同，如果不指定大小，默认情况下，虚拟机会耗尽所有的可用系统内存。如果元数据区发生溢出，虚拟机一样会抛出异常OutOfMemory:Metaspace
+    - `-XX:MetaspaceSize` ：设置初始的元空间大小。对于一个64位的服务器端JVM来说，其默认的 `-XX:MetaspaceSize` 的值位21MB。这就是初始的<span class="yellow-bold">高水位线</span>，一旦触及这个水位线，Full GC将会被触发并卸载没有的类（即这些类对相应的类加载器不在存活），然后这个高水位线将会重置。新的高水位线取决于GC后释放了多少元空间。如果释放的空间不足，那么在不超过MaxMetaspaceSize时，适当提高该值。如果释放空间过多，则适当降低该值
+    - 如果初始的高水位线设置过低，上述高水位线调整情况将会发生很多次。通过垃圾回收的日志可以观察到Full GC多次调用。为了避免频繁地GC，建议将 `-XX:MetaspaceSize` 设置位一个相对较高的值。

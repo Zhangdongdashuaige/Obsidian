@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机学习/数据库/Doris.md",
+                "file": "计算机学习/编程语言/JVM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Doris"
+              "title": "JVM"
             }
           },
           {
@@ -109,13 +109,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机学习/数据库/Doris.md",
+                "file": "计算机学习/编程语言/JVM.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Doris 的大纲"
+              "title": "JVM 的大纲"
             }
           }
         ],
@@ -220,8 +220,16 @@
   },
   "active": "e04042bf5317463c",
   "lastOpenFiles": [
-    "计算机学习/JVM.md",
     "计算机学习/数据库/Doris.md",
+    "计算机学习/工具/Docker.md",
+    "计算机学习/大数据/Flink.md",
+    "计算机学习/编程语言/Python.md",
+    "计算机学习/参考文档.md",
+    "计算机学习/大数据面试.md",
+    "计算机学习/编程语言",
+    "计算机学习/大数据",
+    "计算机学习/工具",
+    "计算机学习/编程语言/JVM.md",
     "计算机学习/数据库/未命名",
     "计算机学习/数据库",
     "img/方法区迭代变化.png",
@@ -233,18 +241,14 @@
     "img/堆内存结构.png",
     "img/GC-1.png",
     "img/GC.png",
-    "计算机学习/Java.md",
+    "计算机学习/编程语言/Java.md",
     "img/动态链接.png",
     "img/加载过程.png",
     "img/JVM确定.png",
-    "计算机学习/参考文档.md",
-    "计算机学习/大数据面试.md",
-    "计算机学习/Flink.md",
-    "计算机学习/Git.md",
+    "计算机学习/工具/Git.md",
     "2025-01-01.md",
     "img",
-    "计算机学习/Python.md",
-    "计算机学习/Spark.md",
+    "计算机学习/大数据/Spark.md",
     "工作/报表报错问题探查.md",
     "Untitled",
     "项目任务工作记录.md",
@@ -258,14 +262,9 @@
     "计算机学习/python数据分析/第08章 数据规整：聚合、合并和重塑.md",
     "计算机学习/python数据分析/第09章 绘图和可视化.md",
     "计算机学习/python数据分析/第05章 pandas入门.md",
-    "计算机学习/python数据分析/第07章 数据清洗和准备.md",
-    "计算机学习/python数据分析/第06章 数据加载、存储与文件格式.md",
     "计算机学习/python数据分析",
     "计算机学习/python_for_data_analysis_2nd_chinese_version",
-    "计算机学习/Flink插图",
-    "Session-mode.drawio",
-    "未命名.canvas",
-    "考研/政治",
-    "考研/数学"
+    "计算机学习/大数据/Flink插图",
+    "未命名.canvas"
   ]
 }

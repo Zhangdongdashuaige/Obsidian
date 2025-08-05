@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机学习/JVM.md",
+                "file": "计算机学习/数据库/Doris.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JVM"
+              "title": "Doris"
             }
           },
           {
@@ -109,22 +109,21 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机学习/JVM.md",
+                "file": "计算机学习/数据库/Doris.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "JVM 的大纲"
+              "title": "Doris 的大纲"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 247.5,
-    "collapsed": true
+    "width": 247.5
   },
   "right": {
     "id": "d892f8554b643a01",
@@ -221,11 +220,14 @@
   },
   "active": "e04042bf5317463c",
   "lastOpenFiles": [
+    "计算机学习/JVM.md",
+    "计算机学习/数据库/Doris.md",
+    "计算机学习/数据库/未命名",
+    "计算机学习/数据库",
     "img/方法区迭代变化.png",
     "img/方法区存放内容.png",
     "img/Pasted image 20250804150444.png",
     "conflict-files-obsidian-git.md",
-    "计算机学习/JVM.md",
     "MarkDown超级教程 Obsidian版 2022.1.12.md",
     "img/堆区.png",
     "img/堆内存结构.png",
@@ -235,7 +237,6 @@
     "img/动态链接.png",
     "img/加载过程.png",
     "img/JVM确定.png",
-    "img/类加载流程图.png",
     "计算机学习/参考文档.md",
     "计算机学习/大数据面试.md",
     "计算机学习/Flink.md",
@@ -265,8 +266,6 @@
     "Session-mode.drawio",
     "未命名.canvas",
     "考研/政治",
-    "考研/数学",
-    "考研/英语",
-    "计算机学习"
+    "考研/数学"
   ]
 }

@@ -123,7 +123,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 247.5,
+    "width": 248.5,
     "collapsed": true
   },
   "right": {
@@ -222,11 +222,12 @@
   "active": "e04042bf5317463c",
   "lastOpenFiles": [
     "计算机学习/编程语言/JVM.md",
-    "计算机学习/数据库/Doris.md",
+    "计算机学习/工具/Git.md",
+    "计算机学习/参考文档.md",
     "计算机学习/工具/Docker.md",
+    "计算机学习/数据库/Doris.md",
     "计算机学习/大数据/Flink.md",
     "计算机学习/编程语言/Python.md",
-    "计算机学习/参考文档.md",
     "计算机学习/大数据面试.md",
     "计算机学习/编程语言",
     "计算机学习/大数据",
@@ -246,7 +247,6 @@
     "img/动态链接.png",
     "img/加载过程.png",
     "img/JVM确定.png",
-    "计算机学习/工具/Git.md",
     "2025-01-01.md",
     "img",
     "计算机学习/大数据/Spark.md",

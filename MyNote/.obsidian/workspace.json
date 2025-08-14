@@ -123,7 +123,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 248.5
+    "width": 248.5,
+    "collapsed": true
   },
   "right": {
     "id": "d892f8554b643a01",
@@ -220,9 +221,10 @@
   },
   "active": "e04042bf5317463c",
   "lastOpenFiles": [
+    "MarkDown超级教程 Obsidian版 2022.1.12.md",
+    "计算机学习/工具/Kubernetes.md",
     "计算机学习/大数据/Spark.md",
     "计算机学习/大数据/Flink.md",
-    "计算机学习/工具/Kubernetes.md",
     "计算机学习/工具/Docker.md",
     "计算机学习/编程语言/JVM.md",
     "计算机学习/工具/Git.md",
@@ -239,7 +241,6 @@
     "img/方法区存放内容.png",
     "img/Pasted image 20250804150444.png",
     "conflict-files-obsidian-git.md",
-    "MarkDown超级教程 Obsidian版 2022.1.12.md",
     "img/堆区.png",
     "img/堆内存结构.png",
     "img/GC-1.png",

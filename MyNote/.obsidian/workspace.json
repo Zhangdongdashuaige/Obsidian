@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机学习/工具/Docker.md",
+                "file": "计算机学习/工具/Kubernetes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Docker"
+              "title": "Kubernetes"
             }
           },
           {
@@ -123,8 +123,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 248.5,
-    "collapsed": true
+    "width": 248.5
   },
   "right": {
     "id": "d892f8554b643a01",
@@ -221,12 +220,14 @@
   },
   "active": "e04042bf5317463c",
   "lastOpenFiles": [
+    "计算机学习/大数据/Spark.md",
+    "计算机学习/大数据/Flink.md",
+    "计算机学习/工具/Kubernetes.md",
+    "计算机学习/工具/Docker.md",
     "计算机学习/编程语言/JVM.md",
     "计算机学习/工具/Git.md",
     "计算机学习/参考文档.md",
-    "计算机学习/工具/Docker.md",
     "计算机学习/数据库/Doris.md",
-    "计算机学习/大数据/Flink.md",
     "计算机学习/编程语言/Python.md",
     "计算机学习/大数据面试.md",
     "计算机学习/编程语言",
@@ -249,7 +250,6 @@
     "img/JVM确定.png",
     "2025-01-01.md",
     "img",
-    "计算机学习/大数据/Spark.md",
     "工作/报表报错问题探查.md",
     "Untitled",
     "项目任务工作记录.md",

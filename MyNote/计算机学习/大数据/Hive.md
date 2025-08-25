@@ -11,4 +11,6 @@ Hive是一个Hadoop客户端，用于将<span class="yellow-bold">HQL转化成Ma
 3. 执行程序运行在Yarn上
 ## Hive架构
   ![[Hive架构.png]]
-  
+
+# Hive语法
+ 

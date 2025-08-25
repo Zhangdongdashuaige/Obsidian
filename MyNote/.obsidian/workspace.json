@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机学习/编程语言/JVM.md",
+                "file": "计算机学习/大数据/Hive.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JVM"
+              "title": "Hive"
             }
           },
           {
@@ -109,17 +109,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机学习/编程语言/JVM.md",
+                "file": "计算机学习/大数据/Hive.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "JVM 的大纲"
+              "title": "Hive 的大纲"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -222,13 +222,15 @@
   },
   "active": "e04042bf5317463c",
   "lastOpenFiles": [
-    "计算机学习/工具/Kubernetes.md",
+    "img/Hive架构.png",
+    "计算机学习/编程语言/JVM.md",
     "MarkDown超级教程 Obsidian版 2022.1.12.md",
+    "计算机学习/大数据/Hive.md",
+    "计算机学习/工具/Kubernetes.md",
     "img/Pasted image 20250814150318.png",
     "计算机学习/大数据/Spark.md",
     "计算机学习/大数据/Flink.md",
     "计算机学习/工具/Docker.md",
-    "计算机学习/编程语言/JVM.md",
     "计算机学习/工具/Git.md",
     "计算机学习/参考文档.md",
     "计算机学习/数据库/Doris.md",
@@ -263,7 +265,6 @@
     "计算机学习/python数据分析/第11章 时间序列.md",
     "计算机学习/python数据分析/第10章 数据聚合与分组运算.md",
     "计算机学习/python数据分析/第08章 数据规整：聚合、合并和重塑.md",
-    "计算机学习/python数据分析/第09章 绘图和可视化.md",
     "计算机学习/python数据分析",
     "计算机学习/python_for_data_analysis_2nd_chinese_version",
     "计算机学习/大数据/Flink插图",

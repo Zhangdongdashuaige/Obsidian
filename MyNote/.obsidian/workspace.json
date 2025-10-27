@@ -22,18 +22,6 @@
             }
           },
           {
-            "id": "cf5392a565bf9b51",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.9.14"
-              },
-              "icon": "lucide-book-up",
-              "title": "版本说明 1.9.14"
-            }
-          },
-          {
             "id": "8522764be1a9bb2f",
             "type": "leaf",
             "state": {
@@ -233,10 +221,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "cf5392a565bf9b51",
+  "active": "8522764be1a9bb2f",
   "lastOpenFiles": [
-    "MarkDown超级教程 Obsidian版 2022.1.12.md",
     "计算机学习/编程语言/Python.md",
+    "MarkDown超级教程 Obsidian版 2022.1.12.md",
     "计算机学习/大数据/Hive.md",
     "img/Hive架构.png",
     "计算机学习/编程语言/JVM.md",

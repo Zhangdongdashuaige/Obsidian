@@ -15,3 +15,11 @@ s[start:end:step]
 
 ## 列表
 ---
+
+
+## 多线程
+---
+``` python
+import os
+
+```

@@ -22,18 +22,6 @@
             }
           },
           {
-            "id": "a0a1f8c3847f10ee",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.10.3"
-              },
-              "icon": "lucide-book-up",
-              "title": "版本说明 1.10.3"
-            }
-          },
-          {
             "id": "8522764be1a9bb2f",
             "type": "leaf",
             "state": {
@@ -47,8 +35,7 @@
               "title": "MarkDown超级教程 Obsidian版 2022.1.12"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -233,12 +220,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "a0a1f8c3847f10ee",
+  "active": "e04042bf5317463c",
   "lastOpenFiles": [
+    "MarkDown超级教程 Obsidian版 2022.1.12.md",
     "img/Python内置函数-3.png",
     "img/Python内置函数-2.png",
     "img/Python内置方法.png",
-    "MarkDown超级教程 Obsidian版 2022.1.12.md",
     "计算机学习/编程语言/Python.md",
     "计算机学习/大数据/Hive.md",
     "img/Hive架构.png",
@@ -263,7 +250,6 @@
     "conflict-files-obsidian-git.md",
     "img/堆区.png",
     "img/堆内存结构.png",
-    "img/GC-1.png",
     "计算机学习/编程语言/Java.md",
     "2025-01-01.md",
     "img",
